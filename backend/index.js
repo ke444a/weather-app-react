@@ -7,6 +7,10 @@ const app = express();
 
 app.use('/api', require('./routes'));
 
-app.use(cors());
+const corsOptions = {
+    origin: ['http://localhost:5173', 'https://weather-application-rltf.onrender.com'],
+    methods: ['GET']
+}
+app.use(cors(corsOptions));
 
 app.listen(PORT, () => console.log(`Server is running on ${PORT}`));

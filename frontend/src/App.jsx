@@ -56,7 +56,7 @@ export default function App() {
     };
 
     const getCityByGeolocation = async (lat, lon) => {
-        const url = `/api?lat=${lat}&lon=${lon}`;
+        const url = `https://weather-api-server.onrender.com/api?lat=${lat}&lon=${lon}`;
 
         const response = await fetch(url);
         const data = await response.json();
