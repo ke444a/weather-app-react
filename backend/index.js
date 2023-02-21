@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 
 const corsOptions = {
-    origin: '*',
+    origin: ['http://localhost:5173', 'https://weather-application-rltf.onrender.com'],
     methods: ['GET']
 }
 app.use(cors(corsOptions));
