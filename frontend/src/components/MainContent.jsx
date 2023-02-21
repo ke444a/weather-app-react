@@ -1,6 +1,7 @@
-import React from 'react';
 import Map from './Map';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faTemperatureLow, faWater, faWind, faCloud, faTemperatureHalf} from '@fortawesome/free-solid-svg-icons';
+
 
 
 export default function MainContent(props) {
@@ -18,21 +19,21 @@ export default function MainContent(props) {
                 <p className='font-medium text-base sm:text-lg'>{props.currentWeather.description}</p>
             </div>
             <div className='weather-card py-1 px-4 bg-tan'>
-                <div className='text-justify text-wild-sand'>
+                <div className='text-wild-sand'>
                     <p className='font-bold text-sm leading-[18px] sm:text-base my-1 sm:my-2'>
-                        <FontAwesomeIcon icon="fa-solid fa-temperature-low" fixedWidth /> Feels like: <span className='ml-2'>{props.currentWeather.apparentTemp}°C</span>
+                        <FontAwesomeIcon icon={faTemperatureLow} fixedWidth /> Feels like: <span className='ml-2'>{props.currentWeather.apparentTemp}°C</span>
                     </p>
                     <p className='font-bold text-sm leading-[18px] sm:text-base my-1 sm:my-2'>
-                        <FontAwesomeIcon icon="fa-solid fa-water" fixedWidth /> Humidity: <span className='ml-2'>{props.currentWeather.humidity}%</span>
+                        <FontAwesomeIcon icon={faWater} fixedWidth /> Humidity: <span className='ml-2'>{props.currentWeather.humidity}%</span>
                     </p>
                     <p className='font-bold text-sm leading-[18px] sm:text-base my-1 sm:my-2'>
-                        <FontAwesomeIcon icon="fa-solid fa-wind" fixedWidth /> Wind speed: <span className='ml-2'>{props.currentWeather.windSpeed} m/s</span>
+                        <FontAwesomeIcon icon={faWind} fixedWidth /> Wind speed: <span className='ml-2'>{props.currentWeather.windSpeed} m/s</span>
                     </p>
                     <p className='font-bold text-sm leading-[18px] sm:text-base my-1 sm:my-2'>
-                        <FontAwesomeIcon icon="fa-solid fa-temperature-half" fixedWidth /> Pressure: <span className='ml-2'>{props.currentWeather.pressure} hPa</span>
+                        <FontAwesomeIcon icon={faTemperatureHalf} fixedWidth /> Pressure: <span className='ml-2'>{props.currentWeather.pressure} hPa</span>
                     </p>
                     <p className='font-bold text-sm leading-[18px] sm:text-base my-1 sm:my-2'>
-                        <FontAwesomeIcon icon="fa-solid fa-cloud" fixedWidth /> Cloudiness: <span className='ml-2'>{props.currentWeather.cloudiness}%</span>
+                        <FontAwesomeIcon icon={faCloud} fixedWidth /> Cloudiness: <span className='ml-2'>{props.currentWeather.cloudiness}%</span>
                     </p>
                 </div>
             </div>

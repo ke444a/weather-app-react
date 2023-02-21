@@ -1,4 +1,3 @@
-import React from 'react';
 import ForecastCard from './ForecastCard';
 
 export default function Forecast(props) {

@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, {useState, useEffect} from 'react';
+import { faSun, faMoon } from '@fortawesome/free-regular-svg-icons';
+import { faXmark, faTemperatureLow, faWater, faWind, faTemperatureHalf, faCloud } from '@fortawesome/free-solid-svg-icons';
+import {useState, useEffect} from 'react';
 
 export default function ForecastCard(props) {
     const [isVisible, setIsVisible] = useState(false);
@@ -39,10 +41,10 @@ export default function ForecastCard(props) {
                 </div>
                 <div className='flex flex-col xs:flex-row justify-between font-medium text-sm sm:text-base'>
                     <p className='xs:mb-2'>
-                        <FontAwesomeIcon className="pr-1" icon="fa-regular fa-sun" />{props.noonTemp}°C
+                        <FontAwesomeIcon className="pr-1" icon={faSun} />{props.noonTemp}°C
                     </p>
                     <p>
-                        <FontAwesomeIcon className="pr-1" icon="fa-regular fa-moon" />{props.nightTemp}°C
+                        <FontAwesomeIcon className="pr-1" icon={faMoon} />{props.nightTemp}°C
                     </p>
                 </div>
             </div>
@@ -56,24 +58,24 @@ export default function ForecastCard(props) {
                         onClick={() => setIsVisible(false)}
                     >
                         {formatDate(props.date)}
-                        <FontAwesomeIcon className="font-bold" size="lg" icon="fa-solid fa-xmark" />
+                        <FontAwesomeIcon className="font-bold" size="lg" icon={faXmark} />
                     </h3>
                     <div className='flex'>
                         <div className='text-left float-left rounded-lg px-2 max-w-[75%]'>
                             <p className='font-medium text-sm leading-4 sm:text-base sm:leading-5 my-1 sm:my-2'>
-                                <FontAwesomeIcon icon="fa-solid fa-temperature-low" fixedWidth /> Feels like:
+                                <FontAwesomeIcon icon={faTemperatureLow} fixedWidth /> Feels like:
                             </p>
                             <p className='font-medium text-sm leading-4 sm:text-base sm:leading-5 my-1 sm:my-2'>
-                                <FontAwesomeIcon icon="fa-solid fa-water" fixedWidth /> Humidity:
+                                <FontAwesomeIcon icon={faWater} fixedWidth /> Humidity:
                             </p>
                             <p className='font-medium text-sm leading-4 sm:text-base sm:leading-5 my-1 sm:my-2'>
-                                <FontAwesomeIcon icon="fa-solid fa-wind" fixedWidth /> Wind speed:
+                                <FontAwesomeIcon icon={faWind} fixedWidth /> Wind speed:
                             </p>
                             <p className='font-medium text-sm leading-4 sm:text-base sm:leading-5 my-1 sm:my-2'>
-                                <FontAwesomeIcon icon="fa-solid fa-temperature-half" fixedWidth /> Pressure:
+                                <FontAwesomeIcon icon={faTemperatureHalf} fixedWidth /> Pressure:
                             </p>
                             <p className='font-medium text-sm leading-4 sm:text-base sm:leading-5 my-1 sm:my-2'>
-                                <FontAwesomeIcon icon="fa-solid fa-cloud" fixedWidth /> Cloudiness:
+                                <FontAwesomeIcon icon={faCloud} fixedWidth /> Cloudiness:
                             </p>
                         </div>
                         <div className='ml-2 sm:ml-5'>

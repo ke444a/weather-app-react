@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import BingMapsReact from 'bingmaps-react';
 
 export default function Map(props) {
