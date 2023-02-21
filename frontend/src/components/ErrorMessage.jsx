@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 
-const ErrorMessage = ({ message }) => {
+const ErrorMessage = () => {
     const [isVisible, setIsVisible] = useState(true);
 
     return (
