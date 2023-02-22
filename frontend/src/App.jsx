@@ -53,7 +53,7 @@ const App = () => {
     };
 
     const getCityByGeolocation = async () => {
-        const url = 'api/';
+        const url = import.meta.env.VITE_SERVER_URL;
         return await axios.get(url, { params: { lat: latitude, lon: longitude } }).then(res => res.data.features[0].properties);
     };
 

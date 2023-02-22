@@ -52,9 +52,10 @@ $ npm install
 $ cd weather-app-react/backend/
 $ npm install
 ```
-Run the application in the root directory of the project:
+Run the application:
 ```bash
-$ npm run start
+$ cd frontend/
+$ npm run dev
 ```
 ### Environment Variables
 Create a `.env` file in the root directory of the project 
