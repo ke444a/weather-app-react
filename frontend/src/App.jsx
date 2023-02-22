@@ -64,7 +64,6 @@ const App = () => {
             enabled: latitude !== null && longitude !== null && city === '',
             refetchOnWindowFocus: false,
             onSuccess: (data) => {
-                console.log('hereCoords!');
                 setCity(data.city);
                 setCountryCode(data.country_code.toUpperCase());
             }
@@ -91,7 +90,6 @@ const App = () => {
             enabled: city !== '',
             refetchOnWindowFocus: false,
             onSuccess: (data) => {
-                console.log('here!');
                 const [lat, lon, country_code] = [data.latitude, data.longitude, data.country_code];
                 setLatitude(lat);
                 setLongitude(lon);

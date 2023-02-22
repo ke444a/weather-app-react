@@ -8,7 +8,7 @@ export default function Header(props) {
     return (
         <header className='py-2 sm:py-3 lg:py-6 bg-tan text-center'>
             <div className='container mx-auto px-2 sm:px-4'>
-                <h1 className='font-bold sm:mb-2 lg:mb-4 text-xl sm:text-2xl lg:text-3xl text-wild-sand uppercase'>Weather</h1>
+                <h1 className='font-bold sm:mb-2 lg:mb-4 text-xl sm:text-2xl lg:text-3xl text-wild-sand uppercase'>Weather Wizard</h1>
                 <form onSubmit={handleSubmit(props.submitCity)}>
                     <input 
                         type="text"
