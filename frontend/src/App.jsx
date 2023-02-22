@@ -53,7 +53,7 @@ const App = () => {
     };
 
     const getCityByGeolocation = async () => {
-        const url = import.meta.env.VITE_WEATHER_BACKEND_URL;
+        const url = 'api/';
         return await axios.get(url, { params: { lat: latitude, lon: longitude } }).then(res => res.data.features[0].properties);
     };
 
