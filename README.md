@@ -20,6 +20,9 @@ This is a web application built with React/Vite that displays the current weathe
 7. Progressive Web App (PWA) support.
 
 ## Demonstration
+### [View website](https://weather-application-rltf.onrender.com/)
+![weather-gif](https://user-images.githubusercontent.com/81090139/220726512-04c27df6-2e48-4f35-ad76-d86e4704c523.gif)
+
 
 ## Technologies
 * ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
