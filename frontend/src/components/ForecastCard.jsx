@@ -9,7 +9,7 @@ import {
     faCloud,
 } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
-import { getFormattedDate } from "../utils/getFormattedDate";
+import getFormattedDate from "../utils/getFormattedDate";
 
 export default function ForecastCard(props) {
     const [isVisible, setIsVisible] = useState(false);
